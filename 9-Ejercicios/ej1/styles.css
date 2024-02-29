@@ -1,0 +1,81 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/**Body**/
+body {
+  /*background-color: rgb(192, 192, 192);*/
+  background-color: rgb(192, 192, 192);
+  width: 950px;
+
+  margin: 0 auto; /*Centralizar bodyt*/
+}
+/**Header**/
+header {
+  font-size: 27px;
+  text-align: center;
+  line-height: 80px;
+  background-color: #0fffcf;
+}
+/**Menu**/
+#menu {
+  background-color: pink;
+  height: 40px;
+
+  margin-bottom: 20px;
+}
+#menu ol li {
+  display: block; /*Quitar puntos*/
+  float: left;
+  line-height: 30px;
+  padding: 3px;
+  border: 1px solid rgb(241, 61, 73);
+}
+
+/**Desactivar float*/
+.clearFix {
+  float: none;
+  clear: both;
+}
+/**Barra lateral**/
+#sidebar {
+  width: 30%;
+  height: 740px;
+  font-size: 12px;
+  text-align: justify;
+  float: right;
+  background-color: peru;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#sidebar h3 {
+  font-size: 20px;
+}
+#sidebar p {
+  padding: 5px;
+}
+/**Articulos**/
+#articulos {
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 68%;
+}
+#articulos p {
+  text-align: justify;
+  padding: 10px;
+  background-color: rgb(93, 219, 101);
+}
+/**Footer**/
+
+#footer {
+  margin-top: 20px;
+
+  background-color: #a7a7a7;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  padding: 2px;
+  line-height: 50px;
+}
+/**Body**/

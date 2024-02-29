@@ -1,0 +1,66 @@
+.container {
+  width: 90%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-top: 16px;
+}
+
+/*el que contiene todo item*/
+
+.border {
+  border: 2px #000 solid;
+}
+.box {
+  height: 200px;
+}
+.align-self-start {
+  align-self: start;
+}
+.flex-container {
+  /* height: 700px; */
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  /* flex: row-reverse; lado derecho */
+  flex-wrap: wrap; /*respeta el ancho de los elementos*/
+  /*para usar align-item necesitamos altura*/
+  /* align-items: flex-start; baseline centra por el texto uno junto al otro */
+  /* align-content:  ; funciona cada vez que tengas mas de una fila */
+  /* justify-content: center; */
+  /*Center- en el medio| 
+  space-between separacion entre elementos, primer y ultimo elementos.los extremos|
+  space-evenly : espacio entreelementos, espacio en los extremos|
+ https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+}
+.item {
+  background-color: purple;
+  text-align: center;
+  border: 2px #000 solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  /*alinear texto*/
+  text-align: center;
+  /* height: 200px; */
+}
+
+.flex-container {
+  flex-grow: 1; /*abarca el mayor espacio que pueda
+  pero si uno tiene el grow 2. avergara ams espacio que los del 1*/
+}
+.h-200 {
+  height: 200px;
+}
+.flex-shrink {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.flex-1 {
+  flex: 1; /*equivale: flex-grow: 1;*/
+}
+
+.flex-2 {
+  flex: 1 0 300px; /*equivale: flex-grow: 1; flex-shrink: 0; flex-basis: 300px;*/
+}

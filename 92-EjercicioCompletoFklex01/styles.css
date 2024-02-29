@@ -1,0 +1,346 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 600px;
+}
+#header {
+  height: 120px; /*para que se centre texto debe poner una altura*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*si algo se intenta salir de la caja no salga*/
+  align-items: center;
+  border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+.logo {
+  flex-grow: 1; /*tenga su tamaño preestablecido, y cuando la pantalla se reduzca ocupe todo el ancho cuando no ocupan*/
+  flex-basis: 65%; /*tamano necesario del hueco*/
+
+  padding: 10px;
+  margin-left: 20px;
+  color: black;
+  text-shadow: 1px 1px 0px #ccc;
+  text-transform: uppercase; /*convertir en mayuscula*/
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+.logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 30%;
+  height: 100%;
+  padding-right: 20px; /*separar el menu de la derecha*/
+}
+
+/*a la primera hija ul del menu*/
+#menu > ul {
+  display: flex; /*pondra uno al lado del otro*/
+  flex-direction: row;
+  flex-wrap: wrap; /*en vez que se salga ponga debajo*/
+  align-items: center;
+  justify-content: space-between; /*Espacio entre cada elemento y que el primero y ultimo elementos pegado a los extremos*/
+  height: 100%;
+  list-style: none; /*quitar el estilo al enlace y quitar puntos.quitar diseño por defecto*/
+}
+
+/*enlaces del menu*/
+
+#menu a {
+  color: #444;
+  text-transform: uppercase;
+  padding: 15px;
+  transition: all 300ms; /*cuando ñe añada el hover, una transacion */
+}
+/*pasar el raton*/
+#menu a:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+/*=======================*/
+/*Contenido. donde se agrepan lateral y projects=> proyectos*/
+
+#contenido {
+  display: flex;
+  justify-content: space-between; /*espacio entre ellos*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: columrown;
+  /* border: 5px solid purple; */
+  /* height: auto; */
+  flex-wrap: wrap;
+  /* NO 
+  width: 98%;
+  margin-bottom: 10px; */
+}
+
+/*Parte Lateral*/
+
+#lateral {
+  /*order: 2; si coloco esto, la lateral se ira al lado derecho de la pagina*/
+  /* border: 3px solid green;
+  display: flex; */
+  flex-basis: 15%;
+  margin-right: 30px;
+  padding: 15px;
+
+  flex-flow: column wrap;
+}
+#lateral h2 {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 100;
+  color: #444;
+  padding-bottom: 10p;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+  align-items: center;
+}
+
+#lateral ul {
+  list-style: none; /*quitar los puntitos de la lista*/
+}
+#lateral ul li {
+  /* list-style: none; quitar los puntitos de la lista */
+  /* background-color: #e5dddd; */
+  /* padding: 20px; */
+  padding-bottom: 20px;
+}
+#lateral a {
+  display: block; /*para poder manipularlos*/
+  padding: 20px;
+  background: #eee;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+#lateral a:hover {
+  background: #444;
+  color: #eee;
+}
+/* #lateral ul li a {
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+} */
+
+/*Parte donde se guardan los proyectos*/
+
+#projects {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; /*ordene el contenido y añada un espacio entre elementos.faltaba*/
+  flex-basis: 80%; /*tamño proyectos*/
+
+  /* margin-right: 25px; */
+}
+
+/*Cada projecto*/
+.project {
+  flex-grow: 1; /*Para que se ajuste cuando tenga que ajustarse*/
+  flex-basis: 250px; /*tamaño del project*/
+  border: 1px solid #ccc;
+  /* margin: 10px; separacion entre projectos */
+  margin-bottom: 25px;
+  margin-right: 20px; /*para que no aparezcan pegados*/
+}
+
+.project img {
+  /*la imagen cubra todo el recuadro*/
+  width: 100%;
+}
+
+/*Info proyecto*/
+.project-info {
+  padding: 10px;
+}
+/*Enlace de la informacion del proyecto*/
+.project-info a {
+  font-size: 16px;
+  font-style: none;
+  color: black;
+  transition: all 300ms;
+}
+
+/*CUANDO PASA EL RATON POR ENCIMA*/
+.project-info a:hover {
+  color: green;
+}
+
+/*Parrafo de la informacion del proyetco*/
+.project-info p {
+  font-size: 13px;
+
+  color: #969696;
+}
+
+/***FOOTER*/
+
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start; /*comience al incio*/
+  align-items: center; /*Colocar los elementos en el medio de la caja aunque este aun lado*/
+  height: 120px;
+  border-top: 1px solid rgba(225, 225, 226, 0.8);
+  /* height: 100px; */
+  /* line-height: 90%; */
+}
+
+#footer .logo {
+  opacity: 0.5;
+  flex-basis: auto; /*para que no se modifique nada*/
+  flex-grow: 1;
+  order: 2; /*invertido orden. ahora estara a al derecha*/
+  text-align: right; /*se mueva a la derecha*/
+  margin-right: 20px;
+}
+
+#footer .info {
+  flex-grow: 1;
+  order: 1;
+  margin-left: 20px;
+  color: #444;
+}
+/* #footer h2 {
+  flex-direction: row;
+  flex-basis: 88%;
+  padding-left: 20px;
+  font-size: 35px;
+  color: #8b8b8b;
+  text-transform: uppercase;
+  font-style: italic; /*cursiva
+} */
+
+/*RESPONSIVE/*
+
+
+/*RESPONSIVE CUADNO BAJA EL HEADER*/
+/*1334 es cuandos e desmonta*/
+@media (max-width: 1334px) {
+  /* body {
+    background-color: red;
+  } */
+  /*HEADER*/
+  #header {
+    text-align: center;
+  }
+  #contenido {
+    flex-direction: row;
+  }
+  #projects {
+    flex-basis: 78%;
+  }
+  /*menu*/
+  #menu > ul {
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* height: 100%; */
+    list-style: none;
+  }
+}
+
+@media (max-width: 951px) {
+  #projects {
+    flex-basis: 70%;
+  }
+}
+
+@media (max-width: 646px) {
+  /*lateral encima de proyectos*/
+
+  #contenido {
+    display: flex;
+    justify-content: space-between; /*espacio entre ellos*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #lateral {
+    margin-right: 0px;
+  }
+  #lateral ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  #lateral ul a {
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .project {
+    /*20 en una linea*/
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* #projects {
+    /* border: 3px solid red; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 100%; /*tamño proyectos*/
+
+  /* margin-right: 25px; 
+  }
+
+  #lateral {
+    /*order: 2; si coloco esto, la lateral se ira al lado derecho de la pagina*/
+  /* border: 3px solid green;
+    display: flex; 
+    flex-basis: 15%;
+    margin-right: 30px;
+    padding: 15px;
+
+    flex-flow: column wrap;
+  } */
+
+  /*FOOTER*/
+  #footer .logo {
+    flex-grow: 1;
+    flex-basis: 100%;
+    order: 1;
+    margin: 0px;
+    text-align: center;
+  }
+
+  #footer .info {
+    flex-grow: 1;
+    flex-basis: 100%;
+    order: 2;
+    text-align: center;
+    margin-left: 20px;
+    color: #444;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,73 @@
+body {
+  --rojo: red;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+/*100vh ocupe todo el vertical*/
+
+#layout {
+  /* display: flex; */
+  /*tiene automatico width:auto */
+  /* display: inline-flex; */
+  /* justify-content: center; flex-start por defecto| flex-end mueve la tira de elementoss al final, derecha del todo| center los pone ne el medio */
+  /*start=left| end=right*/
+  /* justify-content: space-evenly; space-around/evenly ifguales de que espacio entre elementos. beetwen, espacio entre elementos pero primero y ultimo elementos en extremos */
+  display: flex;
+  /*height: 600px; align-items: center; centraliza*/
+  /* height: 600px; */
+  align-items: flex-start;
+  /* flex-direction: row; /*column; 
+  flex-wrap: wrap; estas dos lineas es igual a flex-flow: row wrap;*/
+  flex-flow: row wrap;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.caja {
+  /* flex-basis: calc((100% / 3) - 68px); */
+  /* flex-basis: 25%; tamaño basico o minimo que peude tener, y de ahi expanderse */
+  width: calc(25% - 28px);
+  /* min-width: 25%; */
+  /* flex-grow: 1; */
+  /*cada elemento que tenga estra propiedad va a ocupar el mismo espacio en el contenedor*/
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  margin: 10px;
+  background-color: gray;
+}
+
+.red {
+  /* flex-basis: calc((100% / 3) -68px); del 100% entre 3 */
+  /* flex-grow: 5; */ /*los 8 pixeles son los margenes*/
+  /* background-color: red; */
+  /* align-self: flex-start; */
+  background-color: var(--rojo);
+  /* order: 3; */
+}
+
+.green {
+  /* align-self: center; */
+  /* margin-top: 10%; */
+  background-color: green;
+  /* order: 1; */
+}
+
+.blue {
+  /* align-self: center; */
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+  background-color: blue;
+  /* order: 2; */
+}
+
+.orange {
+  /* flex-basis: 100%; del 100% entre 3
+  align-self: flex-end; */
+  background-color: orange;
+  /* flex-grow: 5; */
+  /* order: 4; */
+}

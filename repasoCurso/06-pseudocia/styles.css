@@ -1,0 +1,72 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+/*pseudoclase es una especie de clase: algo*/
+/*ul li:first-child  Selecciona el primer hijo, el primer li que hay en este caso*/
+ul li:first-child {
+  /*Selecciona el primer hijo*/
+  color: purple;
+  font-weight: bold;
+}
+
+/*SELECCIONA EL elemento que Quieras*/
+ul li:nth-child(3) {
+  /*Selecciona el primer hijo*/
+  color: green;
+  font-weight: bold;
+}
+
+/*SELECCIONA ultimo elemento */
+ul li:last-child {
+  /*Selecciona el primer hijo*/
+  color: orange;
+  font-weight: bold;
+}
+
+#mi-enlace {
+  font-size: 30px;
+  color: lightsalmon;
+}
+
+/*Yo no he visitado ese enlace salga rojo*/
+#mi-enlace:link {
+  color: red;
+}
+
+/*Si lo he visitado cambie a este color*/
+#mi-enlace:visited {
+  color: orangered;
+}
+
+/*Seudoclase a cualqueir elemento*/
+/*hover, focus,  */
+
+/*Cuando pase el raton por encima, cambie el color*/
+#mi-enlace:hover {
+  color: blue;
+}
+
+/*Caundo yo le este pulsando, le doy estilo*/
+
+#mi-enlace:active {
+  color: green;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/*Focus */
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/*Cuando haga focus al input cmabia el borde*/
+
+input[type="text"]:focus {
+  border: 4px dashed red;
+}

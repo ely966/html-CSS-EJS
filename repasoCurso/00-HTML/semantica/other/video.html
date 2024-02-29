@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <video src="video.org" autoplay poster="posterimage.jpg"></video>-->
+
+    <video src="video.org" controls autoplay>
+      <!--Si tiene sun navegador antiguo y no lo soporta asi que muetsra este mensaje-->
+      Tu navegador no soporta la etiqueta video
+    </video>
+
+    <!--Autoplay solo no funciona. controles es play volumen, etc-->
+    <!--controls para tener el control del reproductor del video -->
+    <!--Autoplay para que s ereproduzca automaticamente-->
+    <!--Muted, que este silenciado y funcionara el autoplay ya que los navegadores quieren evitar que te asustes con los sonidos-->
+
+    <!------------------------------------->
+
+    <video controls width="2900px">
+      <source src="videos/video.mp4" type="video/mp4" />
+      <!--videos de diferentes formatos por si uno no caga, carga el otro-->
+    </video>
+  </body>
+</html>

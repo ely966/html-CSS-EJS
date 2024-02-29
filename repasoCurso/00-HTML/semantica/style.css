@@ -1,0 +1,48 @@
+* {
+  background-color: rgb(205, 202, 202);
+}
+
+h1 {
+  background-color: rgb(21, 194, 21);
+}
+header {
+  background-color: green;
+  border: 3px solid green;
+}
+
+nav {
+  background-color: rgb(21, 194, 21);
+}
+
+main {
+  flex-flow: row wrap;
+  width: 60%;
+  background-color: rgb(197, 158, 209);
+  border: 1px solid rgb(113, 89, 120);
+
+  height: 600px;
+}
+section {
+  display: flex;
+  background-color: rgb(55, 115, 180);
+  border: 1px solid rgb(32, 88, 149);
+  height: 200px;
+}
+
+article {
+  flex-basis: 40%;
+  background-color: rgb(98, 155, 216);
+  border: 3px solid rgb(32, 88, 149);
+}
+
+aside {
+  display: flex;
+  width: 30%;
+  background-color: brown;
+  border: 1px solid purple;
+}
+
+footer {
+  background-color: rgb(233, 63, 63);
+  border: 1px solid rgb(233, 63, 63);
+}

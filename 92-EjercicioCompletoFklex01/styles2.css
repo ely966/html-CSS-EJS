@@ -1,0 +1,176 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 600px;
+}
+#header {
+  height: 120px; /*para que se centre texto debe poner una altura*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*si algo se intenta salir de la caja no salga*/
+  align-items: center;
+  border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+.logo {
+  flex-grow: 1; /*tenga su tamaño preestablecido, y cuando la pantalla se reduzca ocupe todo el ancho cuando no ocupan*/
+  flex-basis: 65%; /*tamano necesario del hueco*/
+
+  padding: 10px;
+  margin-left: 20px;
+  color: black;
+  text-shadow: 1px 1px 0px #ccc;
+  text-transform: uppercase; /*convertir en mayuscula*/
+}
+
+.logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 35px;
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 30%;
+  height: 100%;
+  padding-right: 20px; /*separar el menu de la derecha*/
+}
+
+/*a la primera hija ul del menu*/
+#menu > ul {
+  display: flex; /*pondra uno al lado del otro*/
+  flex-direction: row;
+  flex-wrap: wrap; /*en vez que se salga ponga debajo*/
+  align-items: center;
+  justify-content: space-between; /*Espacio entre cada elemento y que el primero y ultimo elementos pegado a los extremos*/
+  height: 100%;
+  list-style: none; /*quitar el estilo al enlace y quitar puntos.quitar diseño por defecto*/
+}
+
+/*enlaces del menu*/
+
+#menu a {
+  color: #444;
+  text-transform: uppercase;
+  padding: 15px;
+  transition: all 300ms; /*cuando ñe añada el hover, una transacion */
+}
+/*pasar el raton*/
+#menu a:hover {
+  background-color: #ccc;
+  color: white;
+}
+
+/*=======================*/
+/*Contenido. donde se agrepan lateral y projects=> proyectos*/
+
+#contenido {
+  display: flex;
+  padding: 5px;
+  /* border: 5px solid purple; */
+  height: auto;
+  flex-wrap: wrap;
+  width: 98%;
+  margin-bottom: 10px;
+}
+
+/*Parte Lateral*/
+
+#lateral {
+  border: 3px solid green;
+  display: flex;
+  flex-basis: 10%;
+  flex-grow: 1;
+  flex-flow: column wrap;
+  align-items: center;
+}
+#lateral ul li {
+  list-style: none; /*quitar los puntitos de la lista*/
+  background-color: #e5dddd;
+  padding: 20px;
+  margin-top: 10px;
+  margin-top: 20px;
+}
+#lateral ul li a {
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+/*Parte donde se guardan los proyectos*/
+
+#projects {
+  border: 3px solid red;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 70%;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+/*Cada projecto*/
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px; /*separacion entre projectos*/
+}
+
+.image-wrap {
+  display: flex;
+  padding: 0px;
+}
+.image-wrap img {
+  width: 250px;
+  height: 180px;
+}
+
+/*Info proiyecto*/
+.project-info {
+  padding: 5px;
+}
+/*Enlace de la informacion del proyecto*/
+.project-info a {
+  font-size: 15px;
+  font-style: none;
+  color: black;
+}
+/*Parrafo de la informacion del proyetco*/
+.project-info p {
+  font-size: 13px;
+
+  color: #969696;
+}
+
+/***FOOTER*/
+
+#footer {
+  align-items: center; /*Colocar los elementos en el medio de la caja aunque este aun lado*/
+  display: flex;
+  /* flex-flow: row wrap; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100px;
+  /* line-height: 90%; */
+}
+#footer h2 {
+  flex-direction: row;
+  flex-basis: 88%;
+  padding-left: 20px;
+  font-size: 35px;
+  color: #8b8b8b;
+  text-transform: uppercase;
+  font-style: italic; /*cursiva*/
+}

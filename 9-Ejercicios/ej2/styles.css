@@ -1,0 +1,17 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0 auto;
+  width: 950px;
+}
+#tabla {
+  /*primer recuadro*/
+  border: 1px solid black;
+}
+#tabla th,
+td,
+tr {
+  border: 1px solid black;
+}
+

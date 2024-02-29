@@ -1,0 +1,291 @@
+/*================================================*/
+/*Variables*/
+
+/* --linkNoStyle:   list-style: none; */
+/*=============*/
+* {
+  font-family: utura-pt, Avenir, -apple-system, "BlinkMacSystemFont", "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*================================================*/
+body {
+  background-color: #b1c5ff;
+  margin: 0px auto;
+}
+/*================================================*/
+.contenedor {
+  /* width: 85%; */
+  /* max-width: 1404px; */
+  max-width: 1600px;
+  margin: 0px auto;
+  background-color: #fbffa7;
+}
+/*================================================*/
+/*HEADER*/
+header {
+  border: 1px solid black;
+  /*background-image: url("https://ableton-production.imgix.net/about/header.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=494&ixjsv=1.1.3&q=50&w=1333");
+*/
+  /* background-image: url("img/header.jpg"); */
+  padding: 10px;
+}
+
+/*======*/
+/*======*/
+
+#svgHeader {
+  margin-top: 15px;
+  flex-grow: 1;
+  margin-left: 40px;
+}
+/*======*/
+/*Primera parte del header. agrupa menu menuDerechaHeader*/
+.primeraParteHeader {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+
+  /*==*/
+}
+/*======*/
+.menu ul {
+  gap: 15px;
+}
+
+/*======*/
+
+.menuDerechaHeader ul {
+}
+.menuDerechaHeader ul li a {
+}
+/*======*/
+.menuDerechaHeader {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+/*======*/
+/*======*/
+/*GENERALES EN HEADER*/
+header ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+header li {
+  list-style: none;
+}
+
+header a {
+  text-shadow: 2px 1p 1px 1px rgb(142, 66, 66);
+  text-decoration: none;
+  font-weight: bold; /*negrita*/
+}
+/*======*/
+/*FIN HEADER*/
+
+/*GENERALES*/
+.seccionTextCentral {
+  margin: 0px auto;
+
+  padding: 30px;
+}
+.separacionSecciones {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.sizeText {
+  max-width: 65%;
+}
+/*======================================================*/
+/*======================================================*/
+.subMenu a {
+  font-weight: 600;
+}
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+main {
+  width: 90%;
+  background-color: #b1c5ff;
+  /* #fbffa7; */
+  margin: 0 auto; /*Mantener en general el recuadro main centrado*/
+}
+/*======================================================*/
+/*======================================================*/
+/*PRIMERA PARTE*/
+
+.imagenHeader img {
+  /* background-image: url("img/header.jpg"); */
+  width: 100%;
+  margin-top: 30px;
+}
+.primeraParte {
+  max-width: 60%;
+}
+/*======================================================*/
+/*======================================================*/
+/*SEGUNDA PARTE. 2 IAMGENES*/
+.segundaParte-2imag {
+  display: flex;
+  flex-wrap: row wrap;
+  gap: 40px;
+  align-items: center;
+}
+/*=========*/
+.segundaParte-Primera {
+  flex-basis: calc(50% - 40px);
+  flex-grow: 1;
+  /* background-image: url("img/photo-1.jpg");
+
+  background-size: 100%; */
+}
+.segundaParte-Primera img {
+  max-width: 600px;
+}
+
+/*===========*/
+.segundaParte-Segunda {
+  flex-basis: 40%;
+  text-align: center;
+  flex-grow: 1;
+}
+.segundaParte-Segunda img {
+  width: 70%;
+}
+/*======================================================*/
+/*======================================================*/
+
+/*TERCERA PARTE*/
+/*TEXT ABAJO VIDEO*/
+.terceraParte {
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  align-items: center;
+  gap: 10px;
+}
+/*====*/
+.terceraParte-text {
+  flex-grow: 1;
+}
+/*===*/
+.terceraParte-video {
+  flex-grow: 1;
+}
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+/*QUINTTA PARTE*/
+.quintaParte {
+  display: flex;
+
+  flex-grow: 1;
+  gap: 40px;
+  width: 1500px;
+}
+.quintaParte img {
+  max-width: 500px;
+  display: block;
+  position: sticky;
+  z-index: 2;
+}
+
+/*==============*/
+article.quintaParte-Izquierda:before {
+  content: "";
+  display: block;
+  width: 705px;
+  height: 838px;
+  background-color: #b6ffc0;
+  position: absolute;
+  /* z-index: -1; */
+  top: 0;
+  left: -80px;
+}
+
+/*====*/
+.quintaParte-Izquierda {
+  flex-basis: calc(50% -20px);
+
+  padding: 20px;
+  position: relative;
+}
+
+/*===*/
+.quintaParte-Derecha {
+  flex-grow: 1;
+  flex-basis: calc(50% -20px);
+  align-self: center;
+}
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+.imagSextaParte {
+  max-width: 920px;
+}
+/*======================================================*/
+/*======================================================*/
+
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+.parteOctava {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  max-width: 1263px;
+  background-color: pink;
+  height: 406px;
+  justify-content: space-between;
+}
+.octavaCuadro {
+  flex-basis: calc(10% - 20px);
+  background-color: pink;
+  width: 10px;
+}
+.parteOctava-imagen1 {
+  flex-basis: calc(40% - 20px);
+}
+.parteOctava-imagen2 {
+  flex-basis: calc(50% - 20px);
+}
+
+.parteOctava img {
+  max-width: 400px;
+}
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+
+/*======================================================*/
+/*======================================================*/
+/*======================================================*/
+.decimaParte {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.decimaParte-izquierda {
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px);
+  background-image: url(" img/photo-8.jpg");
+  background-size: 160%;
+  background-position: right;
+  width: 50%;
+}
+
+.decimaParte-derecha {
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px);
+  background-color: rgb(101, 156, 138);
+}

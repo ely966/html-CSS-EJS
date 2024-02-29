@@ -1,0 +1,39 @@
+body {
+  /* background: red imagen repeat posicion; */
+  /*background-color: #ccc;
+  /*background-image: url(img/patron1.jpg);
+  /* background-repeat: repeat; */
+  /* background-repeat: no-repeat; /*repar-y repeat-x  no-repeat*/
+  /* background-size: 100% 100%;
+ /* background-attachment: fixed; /*Aunque tengas scroll(flechita de la lateral moverse abajo de la pantalla, pero que el fondo se quede quieto y no nos acompañe)*/
+  /* background-position: left bottom; /*POsicione el fondo, la aprte de la imagen que quieres*/
+
+  color: black;
+  text-align: justify;
+  text-indent: 15px; /*Cada parro al inicio, la primera palabra no empieza al inciio, sinio que ams separado.__Empieza*/
+  /* word-spacing: 10px; /*Espacio entre palabras*/
+  /*letter-spacing: 5px; Espacio entre letras */
+}
+
+#caja {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: rgb(45, 130, 242);
+  color: white;
+  font-family: "open Sans";
+  text-align: center; /*posicionar texto. center rigth left justify*/
+  line-height: 50px; /*ALTURA DE LAS LINEAS y separacion entre lineas. que se junte mas o se separen mas*/
+  text-transform: uppercase; /*  mayus */
+  text-decoration: line; /*linea   line-through tacha*/
+  vertical-align: top;
+}
+
+/*text-align: justify; que los textos se queden rectos. que terminen a la misma longitud*/
+/*Pattern background*/
+
+h2 {
+  color: red;
+  background-color: white;
+  background-image: url(img/patron3.jpg);
+  border: 5px solid red;
+}

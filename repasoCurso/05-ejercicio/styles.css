@@ -1,0 +1,190 @@
+/*
+Ejercicio completo con html y css.
+1.crear un documentos html y vincularlo con css
+2.crear estructura html con un CONTENEDOR GENERAL, header/cabecera, menu, 
+barra lateral/sidebar con una seccion de contenido principal, 
+elementos dentro del contenido principal, y footer.
+3.todo el contenido debe estar dentro del contenedor general. su ancho sera 1200px.Estar centrado
+4.Header ocupar el 100% ancho y tener un texto grande centrado
+5.Menu debe tener los elementos uno al lado del otro
+6.COntenido principal debe tener un ancho del 70%
+7.contenido dento del contenedor principal debe ser una cuadricula de 4 lineas de 2 cajas.
+8-Barra lateral debe tener un ancho del 30%
+9.Footer debe tener yun ancho del 100% del div qu lo contiene y abajo del todo
+*/
+/*# id*/
+
+/*Faltaba*/
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*optional*/
+}
+
+#contenedorGeneral {
+  /*background-color: gray;*/
+  margin: 0px auto; /*FALTABA. Centrar el elemento en si, */
+  margin-top: 20px; /*optional*/
+  width: 1200px;
+
+  text-align: center;
+}
+#header {
+  text-align: center;
+  border: 2px solid green;
+  width: 100%;
+  height: 100px; /*tamaño fijo*/
+  background-color: rgb(15, 118, 236);
+  line-height: 90px; /*Centrarse verticalmente.Altura en el header, en medio. FALTABA*/
+}
+/* nav a {
+  size: 25%;
+} */
+
+#contenidoPrincipal > h1 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  color: #444;
+  text-shadow: 10px 0px 5px black; /*eje x ejeY difuminado colo*/
+}
+/*Laterla y contenido uno al aldo del otro ambos float left */
+#contenidoPrincipal {
+  width: 70%;
+  border: 5px solid red;
+  float: left;
+  align-items: center;
+  padding: 7px;
+}
+
+#lateral {
+  border: 1px solid blue;
+  width: 300px;
+  min-height: 500px;
+  max-height: 650px;
+
+  float: left;
+  /*min-width: 500px;*/
+  text-align: center;
+  /*Para queel contenido no sobresalga del recuadro,  y haga un scroll*/
+  overflow: scroll;
+}
+#contenidoPrincipal .caja {
+  width: 300px;
+  height: 300px;
+  border: 2px solid purple;
+  float: left;
+  padding: 5px;
+  margin: 10px; /*separa caja*/
+  box-shadow: 0px 0px 15px black;
+  /*border-radius: 50px;general*/
+  border-radius: 50px 10px 4px 61px; /*por esquina*/
+  /*border-radius: 999px;*/ /*casi circulo o circulo*/
+
+  /*position: relative e slo normal. position:absolute, no hace casoa  los float y unifica todo*/
+}
+/*Sombra dentro de la caja y de efecto de profundidad*/
+.sombra-interior {
+  box-shadow: 5px 5px 10px gray inset !important;
+}
+
+#contenido .caja {
+  width: 40%;
+  height: 250px;
+  background-color: red;
+  border: 5px solid blue;
+  color: white;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+}
+#menu {
+  background-color: #eeeeee !important ;
+  padding: 1px;
+}
+#menu ul li {
+  /*OPCION1:  display: inline-block; faltaba. todddos los  ELEMENTOS NE UNA LINEA*/
+  float: left; /*faltaba**/
+
+  border-right: 1px solid #ccc;
+}
+#menu ul li a {
+  display: block; /*Cuando le doy click en el cuadro en vez del texto falla asi que necvesita esto*/
+  color: #444;
+
+  padding: 15px;
+}
+
+/*CYUando pase el raotn por encima. Funcione a la vez*/
+#menu ul li:hover {
+  background-color: rgb(18, 85, 163);
+  cursor: pointer;
+}
+#menu ul li:hover a {
+  /*funcione ambos hover a la vez*/
+
+  color: white;
+}
+
+/*seudoclase, hover es cuando pase el raton por encima*/
+/* #menu ul li a:hover {
+  color: rgb(15, 118, 236);
+} */
+.clearFloat {
+  float: none;
+  clear: both;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+footer {
+  border: 5px solid black;
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+  color: #444;
+  line-height: 55px;
+  height: 55px;
+  border-top: 1px solid #5f4c4c;
+}
+
+/*normalmente:Esta afuera del resto y no se podra poner entre los otro elementeos pero si encima de todo o abao del todo o lado*
+/*position: absolute. top: 0px => pondra en el primer pixel de la pagina*/
+
+.libre {
+  position: absolute;
+  top: 300px; /*sobre los otros elemntos*/
+  left: 50%; /*A la izquierda del 50%, que es el medio*/
+
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.libre1 {
+  z-index: 2; /*esta capa estara por encima*/
+}
+
+.libre2 {
+  background: purple;
+  top: 180px; /*sobre los otros elemntos*/
+  left: 50%;
+  z-index: 1;
+}
+
+.fija {
+  position: fixed;
+  top: 50opx; /*sobre los otros elemntos*/
+  left: 0px; /*A la izquierda del 50%, que es el medio*/
+
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 50px;
+}

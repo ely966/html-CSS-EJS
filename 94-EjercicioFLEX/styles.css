@@ -1,0 +1,234 @@
+* {
+}
+
+/*CONTAINER*/
+#container {
+  display: flex;
+  flex-flow: row wrap; /*no se amontone los elementos y no sobresalga de al caja*/
+  align-items: center;
+}
+/*==============*/
+/*HEADER*/
+#header {
+  background-image: url("img/bg-header-min.jpg");
+  background-position: center; /*POsicione el fondo, la aprte de la imagen que quieres*/
+  background-size: 110% 230%; /*encajar la imagen. Anchura | alto*/
+  height: 300px;
+  background-attachment: local; /*Aunque tengas scroll(flechita de la lateral moverse abajo de la pantalla, pero que el fondo se quede quieto y no nos acompañe)*/
+  width: 100%;
+}
+/*Es el mismo header, pero separando contenido del fondo*/
+#logMenu {
+  display: flex;
+  flex-flow: row wrap; /*no se amontone los elementos y no sobresalga de al caja*/
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 10px;
+  /* align-items: baseline; */
+}
+/*====*/
+/*LOGO*/
+#header #logo {
+  /* border: 1px solid red; */
+  /* flex-grow: 1; responsive y que ocupa uno */
+  flex-basis: 60%;
+  flex-grow: 1;
+  /* text-align: center; */
+}
+#logo h1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+  margin-left: 50px;
+}
+
+/*====*/
+
+/*MENU*/
+#header nav {
+  /* border: 1px solid blue; */
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+#menu ul {
+  /*es aqui donde hay que poner el flex para menu sea horizontal*/
+  display: flex;
+  flex-grow: 1;
+  list-style: none; /*quitar los puntos*/
+  padding: 10px;
+}
+#menu ul li {
+  /* background-color: #3d3d3d;
+  padding: 15px;
+  border-radius: 5px; */
+}
+/*enlace*/
+#menu ul li a {
+  color: white;
+  text-decoration: none; /*retirar subrayado enlace*/
+  background-color: #3d3d3d;
+  padding: 15px;
+  border-radius: 5px;
+}
+/*cuando pase el CURSOR/ratón por encima*/
+#menu ul li a:hover {
+  color: #3d3d3d;
+  text-decoration: none; /*retirar subrayado enlace*/
+  background-color: white;
+  padding: 15px;
+  transition: all 300ms;
+}
+/*==============*/
+
+/*CONTENEDOR*/
+#contenido {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 100%;
+  align-items: center;
+  /* border: 1px solid purple; */
+  height: auto;
+  width: 500px;
+}
+
+/*Titulo*/
+#titulo {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+/*==============*/
+/*Donde se agrupan las cajas*/
+#cajas {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid purple; */
+  /* justify-content: space-evenly; */
+  padding-top: 10px;
+  justify-content: center;
+  width: 70%;
+}
+
+#cajas .caja {
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: rgb(187, 123, 100);
+  /*top right bottom  left*/
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.caja img {
+  width: 280px;
+}
+.caja .info {
+  color: white;
+
+  text-align: justify;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.info h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 150;
+  margin-left: 10px;
+}
+/*fin columnas de 3 cajas*/
+
+/*=========================*/
+/*SECTION DE LA CAJA NOSOTROS*/
+/*Caja grande*/
+
+#caja-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 899px;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: #3d3d3d;
+  flex-shrink: 898px;
+}
+/*Parte izquierda*/
+.imagNosotros {
+  flex-basis: calc(40% - 20px); /*restandole los amrgenes*/
+  flex-grow: 1;
+}
+.imagNosotros img {
+  width: 100%;
+  flex-grow: 1;
+}
+/*Derecha-texto*/
+#informacion-nosotros {
+  /* border: 1px solid blue; */
+  flex-basis: calc(40% - 20px); /*restandole los margenes*/
+  flex-grow: 1;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin: 20px;
+}
+
+/*titulo*/
+#informacion-nosotros h4 {
+  size: 40px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/*BOTON*/
+
+#informacion-nosotros button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  transition: all 300ms;
+}
+
+#informacion-nosotros button:hover {
+  background-color: white;
+  color: red;
+  padding: 10px;
+}
+
+/*========================*/
+
+/*FOOTER*/
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: #3d3d3d;
+  padding: 5px;
+  border-top: 2px solid gray;
+  margin-top: 10px;
+}
+#footer p {
+  color: white;
+  font-style: italic;
+  size: 16px;
+}
+
+/*HEADER*/
+
+@media (max-width: 910px) {
+  /*^Header*/
+
+  /*Footer*/
+  #footer {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+}

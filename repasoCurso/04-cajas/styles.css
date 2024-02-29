@@ -1,0 +1,66 @@
+/* #caja1 {
+  tamaño caja
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+} */
+
+body {
+  padding: 40px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* #caja1,
+#caja2 {
+  /*tamaño caja
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+
+  border: 10px solid red;
+  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-left: 24px;
+  margin-right: 10px;
+} */
+
+/*controlar las cajas, cuantas por linea, pon un max de width a la caja grande. tiene linea de 3 cajas^*/
+#cajas {
+  max-width: 1035px;
+  border: 1px solid black; /*sin el clear el afecta el float y no sabe cual es el tamaño y np coloca el borde. solucion. colocar diiv con clearfix dentro de la section esta en html*/
+}
+.caja {
+  /*tamaño caja*/
+  /*display inline no deberia funcionar porque daria fallos, ya que seria como texto, y no un bloque*/
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+  display: block;
+  border: 10px solid red;
+  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-left: 24px;
+  margin-right: 10px;
+  float: left; /*funciona con todo display que sea un block. Mover un elemento, elevaarlo hacia un lado. poner una caja al lado del otro*/
+  /*rigth, las dos a la derecha una al lado de la otra, pero se pone primera la segunda caja*/
+}
+/*solo los parrafos dentro de caja*/
+.caja p {
+  font-weight: bold;
+  text-align: center; /*centra el texto*/
+  font-size: 20px;
+  font-family: Arial;
+  line-height: 230px; /*el mismo height que la caja. se quedara en medio de la caja resta el tamaño del tetxo*/
+  padding: 20px; /*pading interno. amplia la caja*/
+  padding-bottom: 34px;
+}
+
+.clearfix {
+  float: none;
+  /*COmo tengo los flotados a la izquierda. con float:left tambien funcionaria*/
+  clear: both; /*LKimpiame lso flotados que hay arriba,todos. tanto izquierda como la derecha*/
+}

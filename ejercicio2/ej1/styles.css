@@ -1,0 +1,561 @@
+* {
+  /* font-family: cursive; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.centrar {
+  margin: 0px auto;
+  align-items: center;
+}
+/* background-color: rgb(173, 153, 236);
+border: 1px solid rgb(54, 22, 84);
+} */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*__*/
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(173, 153, 236);
+  border: 1px solid rgb(54, 22, 84);
+  position: sticky;
+  /* position: sticky; */
+  top: 0;
+  z-index: 2;
+  /*====*/
+  padding: 5px;
+  margin-bottom: 10px;
+}
+h1 {
+  color: white;
+  font-style: oblique;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px rgb(54, 22, 84); /*Sombra al titulo*/
+}
+
+.menu {
+}
+
+.menu ul {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  list-style: none;
+}
+.menu a {
+  /*===*/
+  border: 1px solid rgb(54, 22, 84);
+  background-color: rgb(174, 160, 223);
+  text-decoration: none;
+  color: rgb(54, 22, 84);
+  /*---*/
+  padding: 10px;
+  transition: 300ms all;
+}
+.menu a:hover {
+  background-color: rgb(63, 29, 95);
+  border: 1px solid rgb(54, 22, 84);
+  color: white;
+  font-style: italic;
+}
+/*=============================*/
+/*CONTIENE MAIN Y ASIDE para AGRUPARLOS*/
+.contenedor {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 10px; /*separar ambos elementos*/
+}
+/*==========*/
+/*==============================*/
+/*ASIDE*/
+/*PARTE LATERAL DE LA PAGINA AFUERA DEL MAIN*/
+aside {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-basis: calc(10% - 20px);
+  /* border: 1px solid rgb(54, 22, 84); */
+  /*===*/
+  border: 1px solid purple;
+  border-radius: 10px;
+  overflow: auto;
+  /*====*/
+  height: 80%;
+  position: sticky;
+  top: 150px;
+  /*==*/
+  margin-left: 5px;
+  padding: 15px;
+  background-color: rgb(175, 157, 204);
+}
+/*Titulo lateral*/
+h3 {
+  text-align: center;
+  padding-bottom: 2px;
+  color: rgb(84, 51, 114);
+  font-size: 30px;
+  text-shadow: 1px 1px 2px rgb(54, 22, 84); /*Sombra al titulo*/
+  width: 100%;
+}
+
+aside h3 {
+  font-size: 20px;
+}
+aside p {
+  text-align: justify;
+  color: rgb(255, 255, 255);
+}
+/*=====*/
+/*==============================*/
+/*==============================*/
+/*Main contenido general*/
+main {
+  /* width: 900px; */
+  width: 80%;
+  padding-top: 20px;
+}
+/*================*/
+/*==============================*/
+/*==============================*/
+/*Primera parte de la pagina*/
+.primeraParte {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row wrap;
+  /*===*/
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 10px;
+  overflow: hidden;
+  /*===*/
+  gap: 10px; /*separar ambos elementos*/
+
+  background-color: rgb(210, 198, 229);
+  /*__*/
+  margin-bottom: 5px;
+  padding: 10px;
+}
+/*Titulo de la primera parte*/
+.primeraParte h2 {
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  height: 50px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px rgb(54, 22, 84); /*Sombra al titulo*/
+  font-weight: 100;
+}
+/*=======*/
+
+/*================*/
+/*Agrupa las cajitas*/
+.cajitasAgrupadas {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(60% - 20px);
+  height: 500px;
+  gap: 15px;
+
+  /*===*/
+  background-color: rgb(175, 157, 204);
+  /*===*/
+  border: 1px solid purple;
+  border-radius: 10px;
+
+  /*===*/
+  padding: 10px;
+  padding-right: 10px;
+}
+
+.cajitasAgrupadas h3 {
+  flex-grow: 1;
+  text-align: center;
+  width: 100%;
+}
+
+/*CAJITA*/
+.cajita {
+  /* flex-basis: 100px;*/
+  flex-grow: 1;
+  flex-basis: 15%;
+  height: 100px;
+  /*==*/
+  background-image: url(img/patro3.jpg);
+  background-position: center; /*POsicione el fondo, la aprte de la imagen que quieres*/
+  background-size: 100% 100%; /*encajar la imagen. Anchura | alto*/
+  background-attachment: local; /*Aunque tengas scroll(flechita de la lateral moverse abajo de la pantalla, pero que el fondo se quede quieto y no nos acompañe)*/
+  border: 1px solid rgb(84, 51, 114);
+  /* padding: 30px; */
+  /* margin: 5px; */
+}
+/*CAJITAS2*/
+
+.cajita2 {
+  background-image: url("img/patron4.jpg");
+}
+/*==*/
+/* background-color: rgb(175, 157, 204);*/
+/*================*/
+/*=================================*/
+/*================*/
+/*=================================*/
+
+/*SEGUNDA PARTE*/
+.segundParte {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  /*==*/
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(175, 157, 204);
+  height: 500px;
+
+  /*==*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 13px;
+}
+
+.cajaIzquierda {
+  flex-grow: 1;
+  flex-basis: calc(50% -20px);
+
+  /*==========*/
+  border: 1px solid rgb(175, 157, 204);
+  border-radius: 10px;
+  overflow: hidden;
+  /*===*/
+  background-image: url("img/patron0.jpg");
+  background-size: 200% 180%; /*encajar la imagen. Anchura | alto*/
+  background-attachment: local; /*Aunque tengas scroll(flechita de la lateral moverse abajo de la pantalla, pero que el fondo se quede quieto y no nos acompañe)*/
+
+  /*==========*/
+  max-height: 360px;
+}
+/*=================*/
+/*CAJA DERECHA*/
+
+.cajaDerecha {
+  display: flex;
+  flex-flow: column wrap;
+
+  flex-basis: calc(50% - 30px);
+
+  gap: 10px;
+}
+
+/*CONTINENE LAS 4 CAJAS DE LA SEGUNDA APRTE*/
+.cajitasSegundaParte {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 200px;
+  /*===*/
+  width: 100%;
+  gap: 10px;
+}
+
+.cajita3 {
+  flex-basis: 18%;
+  height: 110px;
+}
+
+/*pasar el raton por encima de la cajita*/
+.cajita3:hover {
+  background-image: url("img/patron10.jpg");
+}
+
+/*Texto de la segunda aprte*/
+.cajaDerecha p {
+  flex-grow: 1;
+  height: 100px;
+  /*==*/
+  text-align: center;
+  border: 1px solid rgb(139, 123, 164);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(139, 123, 164);
+  padding: 5px;
+  /*===*/
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+/*============================*/
+/*============================*/
+/*============================*/
+/*============================*/
+/*==============*/
+/*==============*/
+/*====TERCERA PARTE=====*/
+.terceraParte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*====*/
+  /* border: 1px solid rgb(139, 123, 164); */
+  gap: 20px;
+  padding-top: 10px;
+  /*====*/
+}
+
+/*CARD*/
+.card {
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  /*===*/
+  text-align: center;
+  padding: 5px;
+  /*====*/
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgb(175, 157, 204);
+  height: 400px;
+  /*==*/
+
+  /*===*/
+  padding: 10px;
+}
+.card p {
+  text-align: justify;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+/*imagenes card*/
+.card img {
+  flex-basis: 100%;
+  height: 60%;
+}
+
+.card button {
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 12px;
+  overflow: hidden;
+  /* background-color: rgb(174, 160, 223); */
+  background-color: rgb(160, 137, 234);
+
+  text-decoration: none;
+  color: rgb(54, 22, 84);
+  transition: 300ms all;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: rgb(63, 29, 95);
+  border: 1px solid rgb(54, 22, 84);
+  color: white;
+  font-style: italic;
+}
+
+/*==========================*/
+/*==========================*/
+/*==========================*/
+/*==========================*/
+/*CUARTA PARTE*/
+
+.cuartaParte {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  /*==*/
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(175, 157, 204);
+  height: 400px;
+
+  /*==*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*Grupo de ambas partes de la cuarta parte*/
+.grupoCuartaParte {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+/*==================*/
+.grupoCuartaParte p {
+  border: 1px solid rgb(139, 123, 164);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(139, 123, 164);
+  padding: 10px;
+  color: white;
+}
+/*================*/
+/*Primera parte de la cuarta parte*/
+.cuartaPrimeraParte {
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px);
+
+  /*=========*/
+  text-align: justify;
+}
+
+/*================*/
+/*Segunda parte de la cuarta parte*/
+.cuartaSegundaParte {
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px);
+  text-align: justify;
+}
+
+/*==========================*/
+/*==========================*/
+/*==========================*/
+/*==========================*/
+/*QUINTA PARTE*/
+
+.quintaParte {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  /*==*/
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(175, 157, 204);
+  height: 300px;
+
+  /*==*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 13px;
+}
+
+.quintaInterior {
+  /* max-width: 500px; */
+  max-width: 500px;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.quintaInterior p {
+  border: 1px solid rgb(139, 123, 164);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(139, 123, 164);
+  padding: 10px;
+  color: white;
+}
+/*==========================*/
+/*==========================*//*pointer*/
+/*==========================*/
+/*==========================*/
+/*SEXTA PARTE*/
+/*Nosotros*/
+.sextaParte {
+  display: flex;
+  flex-flow: row wrap;
+  /*==*/
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 15px;
+  overflow: hidden;
+  gap: 25px;
+  /*==*/
+  background-color: rgb(175, 157, 204);
+
+  /*==*/
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+/**/
+.nosotros {
+  flex-grow: 1;
+
+  /* width: 70%; */
+  flex-basis: calc(60% - 20px);
+}
+.nosotros p {
+  text-align: justify;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(139, 123, 164);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(139, 123, 164);
+  padding: 10px;
+}
+.nosotros .redes {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.redes a {
+  border: 1px solid rgb(54, 22, 84);
+  border-radius: 15px;
+  overflow: hidden;
+  /* background-color: rgb(174, 160, 223); */
+  background-color: rgb(160, 137, 234);
+
+  text-decoration: none;
+  color: rgb(54, 22, 84);
+  /*---*/
+  padding: 10px;
+  transition: 300ms all;
+}
+
+.redes a:hover {
+  background-color: rgb(63, 29, 95);
+  border: 1px solid rgb(54, 22, 84);
+  color: white;
+  font-style: italic;
+}
+
+.redes img {
+  width: 5%;
+  height: 5%;
+}
+
+/*===================*/
+
+/*Imagen del nosotros*/
+.nosotrosImage {
+  flex-grow: 1;
+  flex-basis: calc(40% - 20px);
+
+  /*==========*/
+  border: 1px solid rgb(175, 157, 204);
+  border-radius: 20px;
+  overflow: hidden;
+  /*============*/
+  background-image: url("img/patron10.jpg");
+  background-position: center; /*POsicione el fondo, la aprte de la imagen que quieres*/
+  background-size: 100% 100%; /*encajar la imagen. Anchura | alto*/
+  background-attachment: local; /*Aunque tengas scroll(flechita de la lateral moverse abajo de la pantalla, pero que el fondo se quede quieto y no nos acompañe)*/
+}
+
+/*====================*/
+/*FOOTER*/
+footer {
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(173, 153, 236);
+  border: 1px solid black;
+  position: sticky;
+  bottom: 0px;
+}

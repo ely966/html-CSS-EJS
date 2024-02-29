@@ -1,0 +1,245 @@
+* {
+}
+
+/*COSITAS GENERALES*/
+a {
+  text-decoration: none;
+  color: rgb(106, 139, 190);
+}
+
+h3 {
+  text-align: center;
+  background-color: rgb(227, 224, 224);
+  border-top: 2px solid rgb(181, 181, 181);
+  border-bottom: 2px solid rgb(181, 181, 181);
+}
+
+.noPuntos ul li {
+  list-style: none;
+}
+.cuadrado ul li {
+  list-style: square;
+}
+
+p {
+  font-size: 21px;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.red {
+  color: rgb(115, 54, 54);
+}
+
+.blue1 {
+  color: blue;
+}
+.blue {
+  color: rgb(48, 124, 238);
+}
+
+.orange {
+  color: orchid;
+}
+/*=============================================*/
+/*=============================================*/
+
+/*HEADER*/
+.header {
+  display: flex;
+  flex-flow: column wrap;
+
+  /*=======*/
+  align-items: center;
+  border: 2px solid gray;
+  /*=======*/
+  background-image: url("img/paven.png");
+
+  width: 100%;
+  /*==*/
+}
+/*LOGO-imagen*/
+.header img {
+  flex-grow: 1;
+
+  /*=============*/
+  max-height: 300px;
+
+  width: 70%;
+  /*===========*/
+  padding: 10px;
+}
+/*h1-TITULO*/
+h1 {
+  flex-grow: 1;
+
+  font-size: 50px;
+  color: rgb(96, 181, 153);
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px black;
+  /*===*/
+}
+/*==================*/
+/*MENU*/
+.menu {
+  border: 1px solid #eee;
+  background-color: black;
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  /*====*/
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  /*====*/
+  padding: 10px;
+}
+
+.menu ul li a:hover {
+  background-color: white;
+  color: black;
+  font-style: oblique;
+}
+/*============================================*/
+/*============================================*/
+/*============================================*/
+/*MAIN-CONTENEDOR donde agrupa latela y main*/
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/*============================================*/
+/*============================================*/
+
+/*LATERAL*/
+aside {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: calc(13% - 20px);
+  flex-grow: 1;
+  /* border: 2px solid gray; */
+
+  gap: 10px;
+}
+
+/*============================================*/
+
+/*grupoLoginEnlaces - gru`po de enlaces y logins*/
+
+.grupoLoginEnlaces {
+  /*==========*/
+
+  border: 2px solid gray;
+  box-shadow: 1px 1px 1px rgb(205, 205, 205);
+
+  /*===========*/
+  margin-bottom: 30px;
+}
+
+/*============================================*/
+/*General de cada login*/
+.loginEnlaces {
+  /*============*/
+  border-bottom: 2px dashed gray;
+  text-align: center;
+  /*===========*/
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
+.loginEnlaces li {
+  text-align: left;
+  padding-bottom: 5px;
+}
+.loginEnlaces p {
+  margin: 0;
+}
+/*=============*/
+.loginEnlaces button {
+  /*==*/
+  background-color: rgb(5, 164, 95);
+  color: white;
+  /*===*/
+  border: 1px solid green;
+  border-radius: 10px;
+  overflow: hidden;
+  /*====*/
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.loginEnlaces ul li {
+  color: rgb(106, 159, 249);
+}
+
+/*====================================*/
+
+/*FRASE DEL DIA*/
+.fraseDelDia {
+  border: 2px solid gray;
+  box-shadow: 1px 1px 1px rgb(205, 205, 205);
+  padding: 15px;
+}
+/*=======================================*/
+/*==================================*/
+/*MAIN*/
+main {
+  flex-basis: calc(80% - 25px);
+  flex-grow: 1;
+  /* border: 2px solid gray; */
+}
+/*SECTION*/
+/*Noticia general*/
+.noticia {
+  /*==========*/
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px 2px rgb(176, 176, 176);
+  font-size: 18px;
+  /*============*/
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+time {
+  color: rgb(166, 166, 166);
+}
+/*ARTICULO*/
+
+/*============================================*/
+/*============================================*/
+/*footer*/
+
+footer {
+  background-color: rgb(44, 43, 43);
+  color: white;
+  border: 1 solid black;
+  width: 100%;
+  max-height: 80px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 80px;
+}

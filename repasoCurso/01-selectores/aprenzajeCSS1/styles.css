@@ -1,0 +1,134 @@
+/* body {
+  background: gray;
+}
+
+h1 {
+  color: red;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px black;
+  text-decoration: underline;
+}
+ */
+
+/*SELECTORES*/
+
+/*Selector universal*/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: opx;
+  padding: 0px;
+}
+
+/*Selector de etiqueta*/
+h1 {
+  color: red;
+  font-size: 50px;
+  padding: 10px;
+}
+
+a {
+  font-size: 18px;
+  color: green;
+  text-decoration: none;
+}
+footer a {
+  color: red;
+}
+
+/*Selector de id*/
+#description,
+#titulo {
+  border: 5px solid black;
+  padding: 15px;
+}
+
+#titulo {
+  background: blue;
+  border: 2px dashed white;
+}
+/*El ultimo estilo puesto predomina sobre el anterior*/
+
+/*Selector clase*/
+.parrafo {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* .parrafo1 {
+  background-color: green;
+  color: white;
+  padding: 10px;
+} */
+
+.parrafo1,
+.parrafo3 {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.parrafo3 {
+  background-color: orange;
+  color: black;
+}
+/*Selector de atributo*/
+
+/*solo al formulario*/
+#usuario form {
+  border: 5px solid blue;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*que todos los elementos dentro del form, display se comporte como un texto y se coloque ual lado del otro+/
+/*Display block, hace que cada elemento ocupe una linea completa*/
+#usuario form * {
+  display: block;
+}
+
+/*Estilo concreto a inputs*/
+/*Los elemntos cuyo atributo sea type: text*/
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 300px;
+}
+/*Boton*/
+
+input[type="submit"] {
+  background: green;
+  color: white;
+  padding: 15px; /*margebn interno*/
+  font-size: 17px; /*Tamaño letra-->*/
+  text-transform: uppercase; /*Permite cmabiar de mayuscula a minuscula y viceversa.uppercase es mayuscula */
+  border: 1px solid black;
+  cursor: pointer; /*cUANDO TU PASES POR ENCIMA CON EL RATON qque se convierta en un pointer. cursor cambie al icono de la manica de click*/
+}
+
+/*SELECTO HIJO*/
+/*Entrar en el menu directamente a los li, y a hia  los a solo, si tiene un ul dentro del li, no afecta*/
+
+#menu > li > a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+/*Solo a los elementos tras la etiqueta >*/
+/*pero si hay un li de por medio no funciona*/
+#menu > a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+/*PRIORIDAD*/
+/*La ultima regla tiene mas prioridad que la primera. machaca a al primera*/
+#saludo h1 {
+  /*Excepto en eeste caso este tiene mas prioridad.porque esta regla e smas especifica. las reglas especifica mas prioridad*/
+  background-color: brown !important;
+}
+h1 {
+  background-color: purple !important;
+}
+/*#saludo h1  es mas especifico asiq ue es mas prioritario. pero si le pones !important entonces sera ams prioritario 
