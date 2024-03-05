@@ -31,6 +31,7 @@ header {
   /* background-image: url("img/header.jpg"); */
   padding: 10px;
   z-index: 0;
+  height: auto;
 }
 
 /*======*/
@@ -58,6 +59,8 @@ header {
 /*======*/
 /*=============================*/
 /*Primera mitad de la primera parte */
+.menu {
+}
 .menu ul {
   gap: 15px;
 }
@@ -107,19 +110,37 @@ header a {
 /*contenido more header*/
 .contenidoMoreDropHeader {
   display: none;
-  position: absolute;
-  background-color: #b1c5ff;
+  position: relative;
+
   padding: 12px 16px;
-  width: 50%;
+  font-weight: 200;
 }
 
-/*Activarlo y s emuestre*/
+/* Activarlo y s emuestre
 .moreDropHeader.active .contenidoMoreDropHeader {
   display: block;
-}
+} */
 /*Indicativo de mostrar el menu*/
 .active {
   display: block;
+}
+
+.contenidoMoreDropHeader h4 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.contenidoMoreDropHeader h3 {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.contenidoMoreDropHeader p,
+li {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .moreHeader-segFromAbleton {
