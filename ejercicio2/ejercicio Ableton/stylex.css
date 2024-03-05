@@ -22,6 +22,7 @@ body {
   background-color: #fbffa7;
 }
 /*================================================*/
+/*================================================*/
 /*HEADER*/
 header {
   border: 1px solid black;
@@ -29,26 +30,34 @@ header {
 */
   /* background-image: url("img/header.jpg"); */
   padding: 10px;
+  z-index: 0;
 }
 
 /*======*/
 /*======*/
-
+/*======*/
+/*======*/
+/*LOGO del header*/
 #svgHeader {
   margin-top: 15px;
   flex-grow: 1;
   margin-left: 40px;
 }
 /*======*/
+/*=============================*/
+/*================================================*/
 /*Primera parte del header. agrupa menu menuDerechaHeader*/
 .primeraParteHeader {
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;
-
+  font-size: 18px;
   /*==*/
+  padding-right: 20px;
 }
 /*======*/
+/*=============================*/
+/*Primera mitad de la primera parte */
 .menu ul {
   gap: 15px;
 }
@@ -59,14 +68,19 @@ header {
 }
 .menuDerechaHeader ul li a {
 }
-/*======*/
+/*=============================*/
+/*=============================*/
 .menuDerechaHeader {
   flex-grow: 1;
   display: flex;
   flex-flow: row-reverse wrap;
 }
+
+.logIn {
+  font-size: 13px;
+}
 /*======*/
-/*======*/
+/*======*/ /*================================================*/
 /*GENERALES EN HEADER*/
 header ul {
   display: flex;
@@ -83,8 +97,38 @@ header a {
   font-weight: bold; /*negrita*/
 }
 /*======*/
-/*FIN HEADER*/
+/*================================================*/
+/*MORE HEADER*/
+/*more header*/
+.moreDropHeader {
+  position: relative;
+  display: inline-block;
+}
+/*contenido more header*/
+.contenidoMoreDropHeader {
+  display: none;
+  position: absolute;
+  background-color: #b1c5ff;
+  padding: 12px 16px;
+  width: 50%;
+}
 
+/*Activarlo y s emuestre*/
+.moreDropHeader.active .contenidoMoreDropHeader {
+  display: block;
+}
+/*Indicativo de mostrar el menu*/
+.active {
+  display: block;
+}
+
+.moreHeader-segFromAbleton {
+  display: flex;
+}
+/*FIN HEADER*/
+/*================================================*/
+/*================================================*/
+/*================================================*/
 /*GENERALES*/
 .seccionTextCentral {
   margin: 0px auto;
@@ -92,29 +136,41 @@ header a {
   padding: 30px;
 }
 .separacionSecciones {
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .sizeText {
-  max-width: 65%;
+  max-width: 60%;
+}
+h2 {
+  font-size: 28px;
+}
+p {
+  font-size: 19px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 /*======================================================*/
 /*======================================================*/
+/*Parte abajo de header*/
 .subMenu a {
   font-weight: 600;
 }
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
+/*====================*/
+/*===========*/
 main {
   width: 90%;
   background-color: #b1c5ff;
   /* #fbffa7; */
   margin: 0 auto; /*Mantener en general el recuadro main centrado*/
 }
-/*======================================================*/
-/*======================================================*/
+/*===============*/
+/*================*/
 /*PRIMERA PARTE*/
 
 .imagenHeader img {
@@ -125,14 +181,15 @@ main {
 .primeraParte {
   max-width: 60%;
 }
-/*======================================================*/
-/*======================================================*/
+/*===============*/
+/*================*/
 /*SEGUNDA PARTE. 2 IAMGENES*/
 .segundaParte-2imag {
   display: flex;
   flex-wrap: row wrap;
   gap: 40px;
   align-items: center;
+  margin-bottom: 30px;
 }
 /*=========*/
 .segundaParte-Primera {
@@ -143,7 +200,7 @@ main {
   background-size: 100%; */
 }
 .segundaParte-Primera img {
-  max-width: 600px;
+  max-width: 650px;
 }
 
 /*===========*/
@@ -153,9 +210,10 @@ main {
   flex-grow: 1;
 }
 .segundaParte-Segunda img {
-  width: 70%;
+  width: 75%;
 }
-/*======================================================*/
+/*===============*/
+/*================*/
 /*======================================================*/
 
 /*TERCERA PARTE*/
@@ -170,28 +228,27 @@ main {
 /*====*/
 .terceraParte-text {
   flex-grow: 1;
+  margin-bottom: 120px;
 }
 /*===*/
 .terceraParte-video {
   flex-grow: 1;
 }
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
+/*===============*/
+/*================*/
 
-/*======================================================*/
-/*======================================================*/
 /*======================================================*/
 /*QUINTTA PARTE*/
 .quintaParte {
   display: flex;
 
   flex-grow: 1;
-  gap: 40px;
-  width: 1500px;
+  gap: 90px;
+  max-width: 1500px;
+  height: 1100px;
 }
 .quintaParte img {
-  max-width: 500px;
+  max-width: 550px;
   display: block;
   position: sticky;
   z-index: 2;
@@ -201,8 +258,8 @@ main {
 article.quintaParte-Izquierda:before {
   content: "";
   display: block;
-  width: 705px;
-  height: 838px;
+  width: 940px;
+  height: 1100px;
   background-color: #b6ffc0;
   position: absolute;
   /* z-index: -1; */
@@ -217,6 +274,9 @@ article.quintaParte-Izquierda:before {
   padding: 20px;
   position: relative;
 }
+.quintaParte-Izquierda img {
+  margin-bottom: 150px;
+}
 
 /*===*/
 .quintaParte-Derecha {
@@ -224,48 +284,81 @@ article.quintaParte-Izquierda:before {
   flex-basis: calc(50% -20px);
   align-self: center;
 }
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
+
+.quintaParte-Derecha img {
+  max-width: 650px;
+}
+/*===============*/
+/*================*/
+.sextaParteTexto {
+  margin-bottom: 120px;
+}
+/*===============*/
+/*================*/
+
 .imagSextaParte {
   max-width: 920px;
 }
-/*======================================================*/
-/*======================================================*/
+/*===============*/
+/*================*/
 
+/*===============*/
+/*================*/
 /*======================================================*/
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
+/*Parte de dos imagenes y cuadro rosa fondo*/
 .parteOctava {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+
   max-width: 1263px;
-  background-color: pink;
-  height: 406px;
+  height: auto;
   justify-content: space-between;
+  position: relative;
+  height: 900px;
+  z-index: 0;
 }
-.octavaCuadro {
-  flex-basis: calc(10% - 20px);
-  background-color: pink;
-  width: 10px;
+/*==========================================*/
+/*CUADRO ROSA*/
+
+.parteOctava-imagen1:after {
+  content: "";
+  display: block;
+  width: 1055px;
+  height: 950px;
+  background-color: #d5b3ff;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: -1;
 }
 .parteOctava-imagen1 {
   flex-basis: calc(40% - 20px);
+  display: block;
+  top: 30px;
+  /* position: sticky;
+  top: 80px; */
 }
+/*Imagen lado izquierda*/
+.parteOctava-imagen1 img {
+  /* z-index: 1;
+  position: sticky; */
+  display: block;
+  top: 300px;
+  max-width: 400px;
+  position: absolute;
+}
+/*segunda parte de la octava parte*/
 .parteOctava-imagen2 {
   flex-basis: calc(50% - 20px);
+  position: relative;
+  top: 120px;
 }
 
-.parteOctava img {
-  max-width: 400px;
+.parteOctava-imagen2 img {
+  position: absolute;
+  left: 171px;
+  max-width: 700px;
 }
-/*======================================================*/
-/*======================================================*/
-/*======================================================*/
 
 /*======================================================*/
 /*======================================================*/
@@ -288,4 +381,157 @@ article.quintaParte-Izquierda:before {
   flex-grow: 1;
   flex-basis: calc(50% - 20px);
   background-color: rgb(101, 156, 138);
+  padding: 20px;
+  padding-top: 150px;
 }
+
+.decimaParte-derecha h2 {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.decimaParte-derecha a {
+  padding-left: 180px;
+  font-size: 25px;
+}
+
+/*==================================*/
+
+/*FOOTER*/
+.tituloFooter {
+  font-size: 50px;
+  padding-left: 80px;
+  font-weight: 600;
+}
+/*Donde se agrupa cada parte del footer*/
+.partesFooters-PrimeraParte {
+  display: flex;
+  flex-flow: row wrap;
+
+  gap: 20px;
+
+  padding: 30px;
+}
+/*General cada parte*/
+.partesFooter {
+  flex-basis: 25%;
+  flex-grow: 1;
+  text-align: justify;
+  /* border: 1px solid black; */
+  padding: 10px;
+  font-size: 15px;
+}
+
+.informacionAbletonFooter {
+  gap: 10px;
+}
+
+/*Ajustar que esten correctamente uno bajo otro*/
+.partesFooter li {
+  padding-bottom: 8px;
+}
+/*mover inputs y el primer select, en de lenguaje*/
+
+.partesFooter input,
+.langSelect,
+p {
+  margin-left: 25px;
+}
+/*Select añadiendo marging y padding para ajustarlo y poner el espacio dentro de select*/
+.langSelect {
+  max-width: 20%;
+  padding-right: 20px;
+}
+.countrySelect {
+  max-width: 50%;
+  padding-right: 50px;
+}
+.partesFooter select {
+  font-size: 15px;
+}
+
+.partesFooter button,
+input {
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*REDES*/
+.facebook {
+  background-color: rgb(0, 102, 255);
+  width: 7%;
+}
+.twitter {
+  background-color: rgb(111, 169, 255);
+  width: 7%;
+}
+
+.youtube {
+  background-color: rgb(189, 15, 131);
+  width: 7%;
+}
+
+.instagram {
+  background-color: rgb(235, 112, 112);
+  width: 7%;
+}
+
+/*NO REDES*/
+
+/*Reguistarr correo*/
+.registerEmailFooter {
+  flex-basis: 30%;
+}
+.registerEmailFooter p {
+  flex-basis: 60%;
+  font-size: 15px;
+}
+
+.registerEmailFooter button {
+  background-color: blue;
+  color: white;
+}
+
+/*Parte comunidad*/
+.comunityFooter {
+  max-width: 30%;
+}
+
+.comunityFooter ul {
+  max-width: 50%;
+}
+
+/*Titulo general footer*/
+
+h5 {
+  font-size: 15px;
+  padding-left: 25px;
+}
+
+/*Titulos de li en footer*/
+.h5FooterLi {
+  padding-left: 38px;
+  margin-bottom: 0px;
+}
+
+/*===========================*/
+/*Parte segunda del footer*/
+.partesFooters-SegundaParte {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  padding-right: 40px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.menuFooterSegPart ul {
+  display: flex;
+  gap: 13px;
+  margin-left: 25px;
+}
+
+/*made in and logo*/
