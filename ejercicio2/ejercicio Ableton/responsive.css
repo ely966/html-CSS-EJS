@@ -1,0 +1,847 @@
+/*Responsive*/
+/*1600*/
+@media only screen and (max-width: 1600px) {
+  header {
+    margin: 0px auto;
+  }
+
+  .figureHeader {
+    min-height: 0px;
+    max-height: 711px;
+    max-width: 1333px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /*Partes*/
+
+  /*Parte Octava*/
+  .parteOctava {
+    max-width: 900px;
+    width: 100%;
+  }
+  .octavaDerecha {
+    /* max-width: 600px;
+      margin-top: 30px; */
+  }
+
+  /*QUINTA PARTE*/
+
+  .quintaParte {
+    /* background-color: red; */
+    padding: 0px;
+  }
+  .quintaDerecha {
+    max-width: 650px;
+    width: 100%;
+  }
+  article.quintaParte-Izquierda:before {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 1000px;
+    background-color: #b6ffc0;
+    position: absolute;
+    top: 5;
+    left: -125px;
+  }
+
+  footer {
+    max-width: 900px;
+  }
+}
+
+/*===========================================================*/
+
+/*===========================================================*/
+/*===========================================================*/
+/*1080*/
+/*1279. algunas partes necesita estar en colmna*/
+@media only screen and (max-width: 1279px) {
+  /*========*/
+  /*Primera parte-Header*/
+  .menu .menuHeaderPrimerParte {
+    gap: 20px 15px;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+  .menuDerechaHeader ul {
+    gap: 20px;
+  }
+  .menuDerechaHeader ul li a {
+    font-size: 16px;
+  }
+
+  /*========*/
+  /*========*/
+
+  .seccionTextCentral {
+    padding-left: 30px;
+  }
+  .sizeText {
+    max-width: 850px;
+    margin-left: 20px;
+  }
+  /*=================================================*/
+  /*primera parte*/
+  .primeraParte {
+    margin-inline: auto;
+  }
+  .primeraParteParrafo {
+  }
+
+  /*===================================*/
+  /*segundaParte*/
+  .segundaParte-Primera {
+    max-width: 521px;
+    width: 100%;
+    margin-left: 90px;
+  }
+  .segundaIzquierda {
+    padding-left: 4px;
+    max-width: 521px;
+    width: 100%;
+  }
+  .segundaIzquierda img {
+    width: 100%;
+  }
+  /*===========*/
+  .segundaParte-Segunda {
+    max-width: 417px;
+    width: 100%;
+  }
+  .segundaDerecha {
+    max-width: 417px;
+    width: 100%;
+  }
+
+  /*=================*/
+  /*TERCERA APRTE*/
+  .terceraParte {
+    align-items: normal;
+  }
+  .terceraParte-text {
+    margin-left: 0px;
+  }
+
+  .terceraParte h2 {
+    padding-left: 0px;
+  }
+  .terceraParte-video {
+    width: 852px;
+    margin: 0px auto;
+    margin-left: 40px;
+  }
+  .terceraParte-video iframe {
+    width: 100%;
+  }
+
+  /*==========================*/
+  /*QUINTA PARTE*/
+  .quintaParte {
+    display: flex;
+    flex-flow: row;
+    height: auto;
+  }
+  .quintaIzquida {
+    width: 425px;
+    padding-top: 50px;
+  }
+  /*Parte derecha*/
+  .quintaParte-Derecha {
+    max-width: 532px;
+    padding: 0px;
+  }
+  /*Imagen derecha*/
+  .quintaDerecha {
+    width: 532px;
+    /* display: block; */
+    padding-left: 0px;
+    /* display: block; */
+  }
+  article.quintaParte-Izquierda:before {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 959px;
+    background-color: #b6ffc0;
+    position: absolute;
+    top: 5;
+    left: -45px;
+  }
+  /*==================================*/
+  .sextaParteTexto {
+    padding-left: 50px;
+  }
+  /*==================================*/
+  /*PARTE OCTAVA*/
+  .parteOctava {
+    max-width: 500px;
+    margin: 0px auto;
+    height: 800px;
+  }
+  /*2 IMAGENE SY 1 CUADRO*/
+  /*Imagen izquierda*/
+  .octavaIzquierda {
+    width: 33.33333vw;
+    height: 25vw;
+    top: 150px;
+    left: -300px;
+    margin: 0px;
+  }
+  .octavaDerecha {
+    width: 41.66667vw;
+    height: 41.66667vw;
+    left: 40px;
+    margin: 0px;
+    top: -20px;
+  }
+  /*Cuadro rosa de fondo*/
+
+  .parteOctava-imagen1:after {
+    max-width: 66.66667vw;
+    height: 58.33333vw;
+    left: -200px;
+  }
+  /*==================================*/
+
+  /*Fondo*/
+
+  /*==================================*/
+  /*DECIMA APRTE*/
+  .decimaParte {
+    flex-flow: column wrap;
+    margin: 0px auto;
+    width: 1050px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .decimaParte-izquierda {
+    max-width: 100%;
+    min-height: 500px;
+  }
+
+  .decimaParte-derecha {
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin: 0px auto;
+  }
+  .decimaParte-derecha h3,
+  a {
+    /* line-height: 20px; */
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+    margin-left: 10px;
+    width: 85%;
+
+    margin: 0px;
+  }
+  .decimaParte-derecha a {
+  }
+
+  /*===========================================================*/
+  /*FOOTER*/
+  /*=======*/
+  /*Footer*/
+  /*FOOTER*/
+
+  .footerGeneral {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 70px;
+    max-width: 1250px;
+  }
+
+  /*Generales footer*/
+
+  /*==*/
+  /*titulo footer*/
+  .tituloFooter {
+    font-size: 30px;
+  }
+
+  /*====**/
+  .partesFooters-PrimeraParte {
+  }
+  /*Partes de footer*/
+  .partesFooter {
+    width: 320px;
+  }
+  .partesFooter a,
+  p {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+/*===========================================================*/
+/*===========================================================*/
+/*===========================================================*/
+
+/*1024*/
+@media only screen and (max-width: 1025px) {
+  /*========*/
+
+  /*========*/
+  /*========*/
+  .primeraParte {
+    max-width: 682px;
+    width: 100%;
+  }
+  .primeraParte .h2Main {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .primeraParte .pMain {
+    font-size: 16px;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  /*Decima parte*/
+  /*=======================================*/
+  /*SEGUNDA APRTE*/
+
+  .segundaParte-Primera {
+    max-width: 427px;
+    width: 100%;
+
+    margin-left: 40px;
+  }
+  .segundaIzquierda {
+    max-width: 427px;
+    width: 100%;
+  }
+  .segundaParte-Segunda {
+    margin-left: 0px;
+    max-width: 341px;
+    width: 100%;
+  }
+  .segundaDerecha {
+    max-width: 341px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .segundaDerecha img {
+    margin-left: 50px;
+  }
+  /*Segunda Parte*/
+  .segundaParte-2imag {
+    flex-flow: row wrap;
+    margin-top: 70px;
+  }
+
+  /*==========================*/
+  /*QUINTA PARTE*/
+  .quintaParte {
+    display: flex;
+    flex-flow: row;
+    height: auto;
+  }
+  .quintaIzquida {
+    max-width: 341px;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .quintaIzquida img {
+    width: 100%;
+  }
+  /*Parte derecha*/
+  /* .quintaParte-Derecha {
+    max-width: 426px;
+    padding: 0px;
+    width: 100%;
+  } */
+  /*Imagen derecha*/
+  .quintaDerecha {
+    max-width: 426px;
+    width: 100%;
+    padding-left: 0px;
+
+    /* display: block; */
+  }
+  .quintaDerecha img {
+    width: 100%;
+  }
+  article.quintaParte-Izquierda:before {
+    content: "";
+    display: block;
+    width: 576px;
+    height: 759px;
+    background-color: #b6ffc0;
+    position: absolute;
+    top: 5;
+    left: -45px;
+  }
+  /*==================================*/
+  /*OCTAVAç*/
+  .parteOctava {
+    height: 597px;
+  }
+  .parteOctava-imagen1 {
+    max-width: 341px;
+    width: 100%;
+  }
+  .octavaIzquierda {
+    max-width: 341px;
+    width: 100%;
+    padding-left: 80px;
+  }
+  .octavaIzquierda img {
+    width: 100%;
+  }
+
+  .parteOctava-imagen2 {
+    max-width: 426px;
+    width: 100%;
+  }
+  .octavaDerecha {
+    max-width: 426px;
+    width: 100%;
+  }
+
+  .octavaDerecha img {
+    width: 100%;
+  }
+
+  .parteOctava-imagen1:after {
+    height: 597px;
+  }
+
+  /*==================================*/
+  /*DECIMA APRTE*/
+  .decimaParte {
+    flex-flow: column wrap;
+    margin: 0px auto;
+    max-width: 840px;
+    height: auto;
+  }
+  .decimaParte-izquierda {
+    max-width: 100%;
+    min-height: 380px;
+  }
+
+  .decimaParte-derecha {
+  }
+  h2 {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .separacionSecciones {
+    margin-top: 43px;
+    margin-bottom: 40px;
+  }
+  /*=================================*/
+  /*Partes*/
+
+  /*Primera parte*/
+  .primeraParte {
+    width: 98%;
+  }
+  p {
+    font-size: 15px;
+  }
+  /*========================*/
+
+  /*Tercera parte*/
+  .terceraParte {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*video*/
+  .terceraParte-video {
+    margin-left: 0px;
+    padding-left: 0px;
+    max-width: 600px;
+  }
+
+  .videoCuarto {
+    max-width: 500px;
+    height: 300px;
+    margin-left: 0px;
+  }
+
+  /*QUINTA PARTE*/
+  .quintaParte {
+    display: flex;
+    flex-flow: row;
+    height: auto;
+  }
+  .quintaIzquida {
+    width: 255px;
+    padding-top: 50px;
+  }
+  /*Parte derecha*/
+  .quintaParte-Derecha {
+    max-width: 300px;
+    padding: 0px;
+  }
+  /*Imagen derecha*/
+  .quintaDerecha {
+    width: 200px;
+    /* display: block; */
+    padding-left: 0px;
+    /* display: block; */
+  }
+
+  /*Fondo*/
+  article.quintaParte-Izquierda:before {
+    width: 58.33333vw;
+    height: 75vw;
+    left: -45px;
+  }
+
+  /*SEXTA PARTE*/
+
+  /*ImgSEXTA*/
+  .imgSexta {
+    width: 650px;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  /*SEPTIMA PARTE*/
+  /*==================================*/
+  /*PARTE OCTAVA*/
+  .parteOctava {
+    max-width: 500px;
+    margin: 0px auto;
+    height: 500px;
+  }
+  /*2 IMAGENE SY 1 CUADRO*/
+  /*Imagen izquierda*/
+  .octavaIzquierda {
+    width: 33.33333vw;
+    height: 25vw;
+    top: 120px;
+    left: -90px;
+    margin: 0px;
+  }
+  .octavaDerecha {
+    width: 41.66667vw;
+    height: 41.66667vw;
+    left: 40px;
+    margin: 0px;
+    top: -60px;
+  }
+  /*Cuadro rosa de fondo*/
+
+  .parteOctava-imagen1:after {
+    max-width: 66.66667vw;
+    height: 58.33333vw;
+    left: 20px;
+  }
+  /*==================================*/
+  /*DECIMA APRTE*/
+  .decimaParte {
+    flex-flow: column wrap;
+
+    width: 600px;
+    height: auto;
+  }
+  .decimaParte-izquierda {
+    max-width: 600px;
+    min-height: 380px;
+  }
+
+  .decimaParte-derecha {
+    max-width: 600px;
+    height: auto;
+    padding: 40px;
+  }
+  .decimaParte-derecha h3 {
+    padding: 0px;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+  }
+  .decimaParte-derecha a {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  /*===========================================================*/
+  /*FOOTER*/
+
+  .footerGeneral {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 70px;
+  }
+
+  /*Generales footer*/
+
+  /*==*/
+  /*titulo footer*/
+  .tituloFooter {
+    font-size: 40px;
+  }
+  /*primera parte del footer*/
+  .partesFooters-PrimeraParte {
+    flex-flow: column wrap;
+  }
+  .partesFooters-PrimeraParte a,
+  p,
+  h5 {
+    font-size: 16px;
+  }
+
+  /*parte de footer*/
+
+  /*segunda parte footer*/
+  .partesFooters-SegundaParte {
+    flex-direction: column; /*Colocar parte made y logo abajo*/
+  }
+  /*Menu de la segunda parte*/
+  .menuFooterSegPart ul {
+    flex-direction: column;
+  }
+  .menuFooterSegPart a {
+    font-weight: 700;
+  }
+  .ulFooterSegMenu {
+    flex-wrap: column wrap;
+  }
+}
+/*===========================================================*/
+/*===========================================================*/
+/*===========================================================*/
+/*767*/
+@media screen and (max-width: 768px) {
+  .svgImagen {
+    width: 215px;
+    height: 52px;
+    /* width: 100%; */
+  }
+
+  .svgAbletonHeader {
+    width: 215px;
+    height: 52px;
+    /* left: 438px;
+        top: 200px; */
+    /* width: 100%;
+    top: 35%; */
+    /* margin: -52px 0px 0px -215px; */
+    /* width: 20%; */
+  }
+  .primeraParte {
+    max-width: 512px;
+    width: 100%;
+  }
+
+  /*segunda aprte*/
+  .segundaParte-Primera {
+    max-width: 320px;
+    width: 100%;
+  }
+  .segundaIzquierda {
+    padding-left: 4px;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .segundaIzquierda img {
+    width: 100%;
+  }
+  /*===========*/
+  .segundaParte-Segunda {
+    max-width: 255px;
+    width: 100%;
+  }
+  .segundaDerecha {
+    max-width: 255px;
+    width: 100%;
+  }
+  .segundaDerecha img {
+    width: 100%;
+  }
+}
+/*===========================================================*/
+/*===========================================================*/
+/*===========================================================*/
+/*576*/
+@media only screen and (max-width: 579px) {
+  /*HEADER*/
+  .primeraParteHeader a {
+    font-size: 15px;
+  }
+  /*SVG LLOGO HEADER*/
+  #svgHeader {
+    margin: 0px;
+    margin-left: 240px;
+  }
+  /*Fin Header*/
+
+  /*Imagen header*/
+  .figureHeader {
+    max-width: 481px;
+  }
+  /*SVG IMAGENHEADER*/
+  .page-about__header__ableton-logo {
+    max-width: 100px;
+    left: 100;
+  }
+
+  /*MAIN*/
+  .primeraParte {
+    max-width: 480px;
+    width: 100%;
+  }
+  .h2Main {
+    padding-left: 0px;
+  }
+  .pMain {
+    padding-left: 0px;
+  }
+  /*General*/
+  .sizeText {
+    max-width: 100%;
+    padding: 0px;
+  }
+  .sizeText h2 {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 1.25rem;
+  }
+  p {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .seccionTextCentral {
+    margin-left: 0px;
+  }
+
+  /*Partes*/
+
+  /*Primera parte*/
+  .primeraParte {
+    max-width: 482px;
+    width: 100%;
+  }
+  /*Segunda Parte*/
+  .segundaParte-2imag {
+    flex-flow: column wrap;
+  }
+  /*Imagen*/
+  .segundaParte-Primera {
+    padding-left: 0px;
+  }
+  .segundaIzquierda {
+    margin-left: 0px;
+  }
+  .segundaIzquierda img {
+    max-width: 482px;
+  }
+  /*Parte derecha */
+  .segundaParte-Segunda {
+    margin-left: 0px;
+  }
+  .segundaDerecha {
+    margin-left: 0px;
+    width: 400px;
+  }
+  .segundaParte img {
+    width: 100%;
+  }
+
+  /*Tercera parte*/
+  .terceraParte {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  /*video*/
+  .terceraParte-video {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .videoCuarto {
+    max-width: 500px;
+    height: 300px;
+    margin-left: 0px;
+  }
+
+  /*QUINTA PARTE*/
+
+  /*Imagen derecha*/
+  .quintaDerecha {
+    width: 500px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  /*Fondo*/
+  article.quintaParte-Izquierda:before {
+    width: 58.33333vw;
+    height: 75vw;
+    left: -45px;
+  }
+
+  /*SEXTA PARTE*/
+
+  /*ImgSEXTA*/
+  .imgSexta {
+    width: 500px;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  /*SEPTIMA PARTE*/
+  /*==================================*/
+  /*PARTE OCTAVA*/
+  .parteOctava {
+    max-width: 500px;
+    margin: 0px auto;
+  }
+  /*2 IMAGENE SY 1 CUADRO*/
+  /*Imagen izquierda*/
+  .octavaIzquierda {
+    width: 33.33333vw;
+    height: 25vw;
+    top: 100px;
+    left: 0px;
+    margin: 0px;
+  }
+  .octavaDerecha {
+    width: 41.66667vw;
+    height: 41.66667vw;
+    left: 10px;
+    margin: 0px;
+    top: -60px;
+  }
+  /*Cuadro rosa de fondo*/
+
+  .parteOctava-imagen1:after {
+    max-width: 66.66667vw;
+    height: 58.33333vw;
+    left: 50px;
+  }
+  /*==================================*/
+  /*DECIMA APRTE*/
+  .decimaParte {
+    flex-flow: column wrap;
+    max-width: 500px;
+    height: auto;
+  }
+  .decimaParte-izquierda {
+    width: 400px;
+    height: auto;
+  }
+
+  .decimaParte-derecha {
+    width: 500px;
+  }
+}
+/*primeraParte sizeText seccionTextCentral */
